@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-sm bg-body-tertiary py-3">
+      <a class="navbar-brand position-absolute top-0 start-0 ps-2" href="#"><span class="fa-brands fa-instagram"></span> Instagram</a>  
+      <div class="container-fluid justify-content-end">
+          <div class="d-flex flex-column flex-md-row align-items-end">
+            <button type="button" class="btn btn-success mb-2 mb-md-0 me-md-2"  data-bs-toggle="modal" data-bs-target="#newPostModal">Create a new post</button>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="fa-solid fa-gear"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </nav>
+
+    <!-- TAB LINKS-->
+    <div class="nav d-flex justify-content-center gap-2 py-2">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1">
+            <span class="fa-solid fa-table-cells"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2">
+            <span class="fa-solid fa-square"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="tab-content">
+      <!-- TAB 1 -->
+      <div class="tab-pane fade" id="tab1">
+        <div class="container-fluid w-100">
+          <div class="row d-flex p-0">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/237/200/200" alt="my dog">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/238/200/200" alt="New York City skyline">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/239/200/200" alt="dandelion ready to blow">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/240/200/200" alt="steps leading down into a river">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/241/200/200" alt="path leading along a fence over a hill">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/242/200/200" alt="train tracks at night">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/243/200/200" alt="misty mountain valley">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/244/200/200" alt="pelicans perched on a dock">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/247/200/200" alt="reddish rock formations on a barren landscape">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- TAB 2 DEFAULT-->
+      <div class="col-6 tab-pane fade show active mx-auto" id="tab2">
+
+          <div class="card mb-4" id="post1">
+            <div class="row">
+              <div class="col-10">
+                <h1 class="card-title p-2 pe-4 fs-4 m-0">My Crazy dog Spark!</h1>
+              </div>
+              <div class="col-2">
+                <p class="position-absolute top-0 end-0 m-1 fs-6">08/26</p>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/237/300/200" alt="my dog">
+              <p class="card-text p-2 fs-6 mb-3"><span class="fw-bold">204 Likes</span><br />Join me on a wild adventure as my unpredictable pup, Spark, turns everyday moments into unforgettable escapades.</p>
+            </div>
+
+          </div>
+          <div class="card mb-4" id="post2">
+            <div class="row">
+              <div class="col-10">
+                <h1 class="card-title p-2 pe-4 fs-4 m-0">A slice of the Big Apple</h1>
+              </div>
+              <div class="col-2">
+                <p class="position-absolute top-0 end-0 m-1 fs-6">08/01</p>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/238/300/200" alt="New York City skyline">
+              <p class="card-text p-2 fs-6 mb-3"><span class="fw-bold">317 Likes</span><br />Savor the vibrant flavors and unique stories that make New York City a delicious melting pot of culture.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4" id="post3">
+            <div class="row">
+              <div class="col-10">
+                <h1 class="card-title p-2 pe-4 fs-4 m-0">Make a wish!</h1>
+              </div>
+              <div class="col-2">
+                <p class="position-absolute top-0 end-0 m-1 fs-6">07/15</p>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/239/300/200" alt="dandelion ready to blow">
+              <p class="card-text p-2 fs-6 mb-3"><span class="fw-bold">523 Likes</span><br />Step into a world of endless possibilities where every moment invites you to dream big and make a wish.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4" id="post4">
+            <div class="row">
+              <div class="col-10">
+                <h1 class="card-title p-2 pe-4 fs-4 m-0">It's all about perspective</h1>
+              </div>
+              <div class="col-2">
+                <p class="position-absolute top-0 end-0 m-1 fs-6">06/26</p>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/240/300/200" alt="steps leading down into a river">
+              <p class="card-text p-2 fs-6 mb-3"><span class="fw-bold">108 Likes</span><br />Discover how a simple change in viewpoint can transform the mundane into something truly extraordinary.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4" id="post5">
+            <div class="row">
+              <div class="col-10">
+                <h1 class="card-title p-2 pe-4 fs-4 m-0">Over the hill</h1>
+              </div>
+              <div class="col-2">
+                <p class="position-absolute top-0 end-0 m-1 fs-6">06/06</p>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/241/300/200" alt="path leading along a fence over a hill">
+              <p class="card-text p-2 fs-6 mb-3"><span class="fw-bold">415 Likes</span><br />Embrace the wisdom and beauty that come with life's challenges, proving that every hill climbed is a story to tell.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4" id="post6">
+            <div class="row">
+              <div class="col-10">
+                <h1 class="card-title p-2 pe-4 fs-4 m-0">Madrid Cercanías</h1>
+              </div>
+              <div class="col-2">
+                <p class="position-absolute top-0 end-0 m-1 fs-6">05/01</p>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/242/300/200" alt="train tracks at night">
+              <p class="card-text p-2 fs-6 mb-3"><span class="fw-bold">402 Likes</span><br />Hop on board as we navigate the pulse of Madrid through its bustling Cercanías network, where the city comes alive.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4" id="post7">
+            <div class="row">
+              <div class="col-10">
+                <h1 class="card-title p-2 pe-4 fs-4 m-0">Day trip to the Sierra</h1>
+              </div>
+              <div class="col-2">
+                <p class="position-absolute top-0 end-0 m-1 fs-6">04/27</p>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/243/300/200" alt="misty mountain valley">
+              <p class="card-text p-2 fs-6 mb-3"><span class="fw-bold">234 Likes</span><br />Escape into nature’s embrace on a refreshing day trip to the stunning, rugged landscapes of the Sierra.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4" id="post8">
+            <div class="row">
+              <div class="col-10">
+                <h1 class="card-title p-2 pe-4 fs-4 m-0">When you think you can't... You peliCAN!</h1>
+              </div>
+              <div class="col-2">
+                <p class="position-absolute top-0 end-0 m-1 fs-6">04/05</p>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/244/300/200" alt="pelicans perched on a dock">
+              <p class="card-text p-2 fs-6 mb-3"><span class="fw-bold">369 Likes</span><br />Unleash your inner strength and discover how a bit of determination can turn “can’t” into “peliCAN!”</p>
+            </div>
+          </div>
+
+          <div class="card mb-4" id="post9">
+            <div class="row">
+              <div class="col-10">
+                <h1 class="card-title p-2 pe-4 fs-4 m-0">Las Bardenas Reales</h1>
+              </div>
+              <div class="col-2">
+                <p class="position-absolute top-0 end-0 m-1 fs-6">03/18</p>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <img class="img-fluid w-100" src="https://picsum.photos/id/247/300/200" alt="reddish rock formations on a barren landscape">
+              <p class="card-text p-2 fs-6 mb-3"><span class="fw-bold">289 Likes</span><br />Journey through the surreal, windswept landscapes of Las Bardenas Reales, where nature paints its own masterpiece.</p>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+    
+
+<!--NEW POST MODAL-->
+<div class="modal fade" id="newPostModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label fw-semibold">Caption:</label>
+            <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+          </div>
+        </form>
+        <div class="justify-content-start gap-2">
+          <button type="button" class="btn btn-light border flex-fill" style="width:3rem;"><span class="fa-solid fa-camera"></span></button>
+          <button type="button" class="btn btn-light border flex-fill" style="width:3rem;"><span class="fa-solid fa-location-dot"></span></button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+    </body>
+</html>
