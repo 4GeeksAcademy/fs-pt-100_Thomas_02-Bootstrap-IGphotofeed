@@ -9,11 +9,47 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-sm bg-body-tertiary py-3">
-      <a class="navbar-brand position-absolute top-0 start-0 ps-2" href="#"><span class="fa-brands fa-instagram"></span> Instagram</a>  
-      <div class="container-fluid justify-content-end">
-          <div class="d-flex flex-column flex-md-row align-items-end">
-            <button type="button" class="btn btn-success mb-2 mb-md-0 me-md-2"  data-bs-toggle="modal" data-bs-target="#newPostModal">Create a new post</button>
+    <nav class="navbar navbar-expand-md bg-body-tertiary py-3">
+
+      <!-- brand -->
+      <a class="navbar-brand position-absolute top-0 start-0 ps-2" href="#">
+        <span class="fa-brands fa-instagram"></span> Instagram
+      </a>
+    
+      <div class="container-fluid">
+    
+        <!-- hamburger -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- buttons default -->
+        <div class="d-none d-md-flex w-100 justify-content-end align-items-center">
+          <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#newPostModal">
+            Create a new post
+          </button>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="fa-solid fa-gear"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- buttons in hamburger dropdown -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex d-md-none flex-column align-items-end pt-3">
+            <button type="button" class="btn btn-success mb-2" data-bs-toggle="modal" data-bs-target="#newPostModal">
+              Create a new post
+            </button>
             <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="fa-solid fa-gear"></span>
@@ -27,8 +63,12 @@
               </ul>
             </div>
           </div>
+        </div>
+    
       </div>
     </nav>
+    
+  
 
     <!-- TAB LINKS-->
     <div class="nav d-flex justify-content-center gap-2 py-2">
@@ -51,31 +91,31 @@
       <div class="tab-pane fade" id="tab1">
         <div class="container-fluid w-100">
           <div class="row d-flex p-0">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="col-12 col-md-6 col-lg-4 p-1">
               <img class="img-fluid w-100" src="https://picsum.photos/id/237/200/200" alt="my dog">
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="col-12 col-md-6 col-lg-4 p-1">
               <img class="img-fluid w-100" src="https://picsum.photos/id/238/200/200" alt="New York City skyline">
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="col-12 col-md-6 col-lg-4 p-1">
               <img class="img-fluid w-100" src="https://picsum.photos/id/239/200/200" alt="dandelion ready to blow">
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="col-12 col-md-6 col-lg-4 p-1">
               <img class="img-fluid w-100" src="https://picsum.photos/id/240/200/200" alt="steps leading down into a river">
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="col-12 col-md-6 col-lg-4 p-1">
               <img class="img-fluid w-100" src="https://picsum.photos/id/241/200/200" alt="path leading along a fence over a hill">
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="col-12 col-md-6 col-lg-4 p-1">
               <img class="img-fluid w-100" src="https://picsum.photos/id/242/200/200" alt="train tracks at night">
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="col-12 col-md-6 col-lg-4 p-1">
               <img class="img-fluid w-100" src="https://picsum.photos/id/243/200/200" alt="misty mountain valley">
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="col-12 col-md-6 col-lg-4 p-1">
               <img class="img-fluid w-100" src="https://picsum.photos/id/244/200/200" alt="pelicans perched on a dock">
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-1">
+            <div class="col-12 col-md-6 col-lg-4 p-1">
               <img class="img-fluid w-100" src="https://picsum.photos/id/247/200/200" alt="reddish rock formations on a barren landscape">
             </div>
           </div>
